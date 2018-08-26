@@ -13,7 +13,7 @@ h1 {
 }
 
 .news .w3-container {
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 .news {
@@ -53,7 +53,8 @@ h1 {
 }
 
 .article__title {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-size: 19px;
 }
 
 .error {
