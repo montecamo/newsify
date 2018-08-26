@@ -1,0 +1,57 @@
+body,h1 {
+  font-family: "Raleway", Arial, sans-serif;
+  background: rgb(241, 241, 241);
+  transform: scale(1.02);
+}
+
+h1 {
+  letter-spacing: 6px
+}
+
+.w3-row-padding img {
+  margin-bottom: -0.01em; 
+}
+
+.news .w3-container {
+  padding: 10px 20px;
+}
+
+.news {
+  padding: 30px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.news a {
+  text-decoration: none;
+}
+
+.article img {
+  max-height: 400px;
+  object-fit: cover;
+  object-position: 0 0;
+  filter: grayscale(75%);
+}
+
+.article:hover img {
+  cursor: pointer;
+  filter: unset;
+}
+
+.pagination {
+  margin-bottom: 125px;
+}
+
+.loading-spinner {
+  margin: 80px 0;
+}
+
+.article__content {
+  margin-top: -3px;
+}
+
+.article__title {
+  margin-bottom: 5px;
+}
