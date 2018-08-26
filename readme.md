@@ -12,7 +12,7 @@ Minimalistic news agregator
 
 ```sh
 $ git clone https://github.com/montecamo/newsify
-$ cd frontend 
+$ cd newsify 
 ```
 
 2. Install project dependencies:
