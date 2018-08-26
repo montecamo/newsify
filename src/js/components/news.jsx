@@ -6,6 +6,7 @@ import { changeCategory } from '../actions/newsActions';
 import { fetchNews } from '../actions/newsActions';
 import Pagination from './pagination.jsx';
 import Spinner from './spinner.jsx';
+import Error from './error.jsx';
 import Article from './article.jsx';
 
 const UPDATE_DELAY = 1000 * 60;
@@ -42,7 +43,7 @@ export default class News extends Component {
     if (status === 'loading') {
       return <Spinner />
     } else if (status === 'error') {
-      return <p>Error</p>
+      return <Error />
     }
 
     return (

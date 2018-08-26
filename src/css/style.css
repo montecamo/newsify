@@ -44,7 +44,7 @@ h1 {
   margin-bottom: 125px;
 }
 
-.loading-spinner {
+.loading-spinner, .error {
   margin: 80px 0;
 }
 
@@ -54,4 +54,8 @@ h1 {
 
 .article__title {
   margin-bottom: 5px;
+}
+
+.error {
+  font-size: 30px;
 }

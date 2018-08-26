@@ -41,7 +41,7 @@ export function fetchNews() {
     })
     .catch((err) => {
       console.log(err);
-      dispatch(fetchNewsError);
+      dispatch(fetchNewsError());
     })
   }
 }
