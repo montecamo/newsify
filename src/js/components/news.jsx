@@ -8,17 +8,25 @@ import Pagination from './pagination.jsx';
 import Spinner from './spinner.jsx';
 import Article from './article.jsx';
 
+const UPDATE_DELAY = 1000 * 60;
+
 @connect(mapStateToProps, mapDispatchToProps)
 export default class News extends Component {
   componentDidMount() {
     this.props.fetchNews();
+
+    this.interval = setInterval(this.props.fetchNews, UPDATE_DELAY);
   }
 
   componentDidUpdate(prevProps) {
     if (prevProps.page !== this.props.page || prevProps.category !== this.props.category) {
       this.scrollTop();
-      setTimeout(() => this.props.fetchNews(), 0);
+      this.props.fetchNews();
     }
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   scrollTop() {
