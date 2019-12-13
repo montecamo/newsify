@@ -11,7 +11,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "connected-react-router": "^4.3.0",
-    "npm": "^6.3.0",
+    "npm": "^6.13.4",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
