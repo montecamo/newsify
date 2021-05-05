@@ -9,7 +9,7 @@
     "build:dev": "webpack -p --progress --config=config/webpack.dev.js  --mode development"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "connected-react-router": "^4.3.0",
     "dotenv-webpack": "^7.0.2",
     "npm": "^6.3.0",
