@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
+
 
 console.log(process.cwd());
 let config = {
@@ -21,7 +23,9 @@ let config = {
       template: path.join(__dirname, '../src/index.html')
     }),
 
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('style.css'),
+
+    new Dotenv()
   ],
 
   module: {

@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-const API_KEY = '3b0f6e1db14b44ec867ced2b5e70c3d4';
 const PAGE_SIZE = 10;
 const COUNTRY = 'us';
 
@@ -29,7 +28,7 @@ export function fetchNews() {
     dispatch(fetchNewsStart());
 
     let { category, page } = getState().news;
-    let url = `https://newsapi.org/v2/top-headlines?apiKey=${API_KEY}&category=${category}&page=${page}&pageSize=${PAGE_SIZE}&country=${COUNTRY}`;
+    let url = `https://newsapi.org/v2/top-headlines?apiKey=${process.env.API_KEY}&category=${category}&page=${page}&pageSize=${PAGE_SIZE}&country=${COUNTRY}`;
     
     axios.get(url)
     .then((res) => {
