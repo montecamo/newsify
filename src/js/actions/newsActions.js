@@ -28,7 +28,7 @@ export function fetchNews() {
     dispatch(fetchNewsStart());
 
     let { category, page } = getState().news;
-    let url = `https://newsapi.org/v2/top-headlines?apiKey=${process.env.API_KEY}&category=${category}&page=${page}&pageSize=${PAGE_SIZE}&country=${COUNTRY}`;
+    let url = `${process.env.PROXY}/https://newsapi.org/v2/top-headlines?apiKey=${process.env.API_KEY}&category=${category}&page=${page}&pageSize=${PAGE_SIZE}&country=${COUNTRY}`;
     
     axios.get(url)
     .then((res) => {
